@@ -195,6 +195,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin: 0;
 }
 
 .feynman__link {
@@ -312,8 +313,4 @@
 .flex-row {
   display: flex;
   flex-direction: row;
-}
-
-.margin-zero {
-  margin: 0;
 }
