@@ -18,6 +18,11 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  z-index: -1;
 }
 
 .header__title {
@@ -27,7 +32,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 1
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -43,7 +48,7 @@
 }
 
 .logo {
-  z-index: 1
+  z-index: 1;
 }
 
 .logo_place_header {
@@ -63,16 +68,6 @@
   bottom: 0;
   right: 0;
   z-index: 0;
-}
-
-.header__square-pic {
-  position: absolute;
-  top: 64px;
-  right: 0;
-  width: 568px;
-  height: 568px;
-  background-color: #2f80ed;
-  z-index: -1
 }
 
 .description {
