@@ -12,7 +12,6 @@
   display: flex;
   background-color: #f2f2f2;
   position: relative;
-  z-index: -2;
 }
 
 .header__square-pic {
@@ -22,7 +21,7 @@
   top: 64px;
   right: 0;
   background-color: #2f80ed;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header__title {
@@ -32,7 +31,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -44,11 +43,11 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .logo {
-  z-index: 1;
+  z-index: 3;;
 }
 
 .logo_place_header {
@@ -68,7 +67,7 @@
   height: 608px;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: 2;
 }
 
 .description {
@@ -178,7 +177,7 @@
   position: relative;
   background-color: #f2f2f2;
   min-height: 790px;
-  z-index: -2;
+  background: url(../images/feynman.png) left bottom no-repeat;
 }
 
 .feynman__title {
@@ -189,6 +188,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -197,6 +197,7 @@
   font-size: 36px;
   font-weight: normal;
   margin: 0;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -208,13 +209,7 @@
   font-weight: normal;
   text-decoration: unset;
   color: #2f80ed;
-}
-
-.feynman__background {
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
+  z-index: 1;
 }
 
 .kaufman {
@@ -222,26 +217,30 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 90px;
-  z-index: -2;
 }
 
 .section-title_theme_dark {
   color: white;
   padding-top: 90px;
+  position: relative;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: white;
   margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
-.kaufman__triangle_image {
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-position: top right;
   position: absolute;
-  right: -120px;
+  right: -210px;
   top: 0;
   width: 877px;
   height: 877px;
-  z-index: -1;
 }
 
 .table__cell_theme_dark {
@@ -250,6 +249,7 @@
   margin-right: 0;
   margin-top: 80px;
   margin-bottom: 0;
+  z-index: 2;
 }
 
 .footer {
